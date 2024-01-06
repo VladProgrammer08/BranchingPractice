@@ -28,19 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            txtName = new TextBox();
+            btnDisplayGreeting = new Button();
             SuspendLayout();
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(75, 91);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(125, 27);
+            txtName.TabIndex = 0;
+            // 
+            // btnDisplayGreeting
+            // 
+            btnDisplayGreeting.Location = new Point(75, 172);
+            btnDisplayGreeting.Name = "btnDisplayGreeting";
+            btnDisplayGreeting.Size = new Size(159, 54);
+            btnDisplayGreeting.TabIndex = 1;
+            btnDisplayGreeting.Text = "Display Greeting";
+            btnDisplayGreeting.UseVisualStyleBackColor = true;
+            btnDisplayGreeting.Click += btnDisplayGreeting_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnDisplayGreeting);
+            Controls.Add(txtName);
             Name = "Form1";
             Text = "Branching Practice";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox txtName;
+        private Button btnDisplayGreeting;
     }
 }

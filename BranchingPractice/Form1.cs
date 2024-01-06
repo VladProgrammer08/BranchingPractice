@@ -12,7 +12,7 @@ namespace BranchingPractice
 
         }
 
-        private void btnDisplayGreeting_Click(object sender, EventArgs e)
+        private void BtnDisplayGreeting_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"Hello {txtName.Text}");
         }
